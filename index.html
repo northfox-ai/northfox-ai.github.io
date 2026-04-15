@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>North London Editions Limited</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-tint": "#5f5e5e",
+          "surface-bright": "#fbf9f4",
+          "primary-container": "#3c3b3b",
+          "primary": "#000000",
+          "tertiary-fixed-dim": "#474747",
+          "secondary-fixed-dim": "#ababab",
+          "secondary-fixed": "#c6c6c6",
+          "on-background": "#1b1c19",
+          "surface-container": "#f0eee9",
+          "on-surface": "#1b1c19",
+          "on-primary-fixed-variant": "#e5e2e1",
+          "on-secondary-fixed-variant": "#3b3b3b",
+          "error": "#ba1a1a",
+          "on-tertiary": "#e2e2e2",
+          "on-secondary": "#ffffff",
+          "on-surface-variant": "#474747",
+          "on-secondary-fixed": "#1b1b1b",
+          "tertiary-container": "#747474",
+          "surface-container-high": "#eae8e3",
+          "background": "#fbf9f4",
+          "on-tertiary-fixed": "#ffffff",
+          "inverse-on-surface": "#f2f1ec",
+          "surface-container-low": "#f5f3ee",
+          "on-tertiary-fixed-variant": "#e2e2e2",
+          "error-container": "#ffdad6",
+          "surface-variant": "#e4e2dd",
+          "on-primary": "#e5e2e1",
+          "inverse-surface": "#30312e",
+          "inverse-primary": "#c8c6c5",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#ffffff",
+          "secondary": "#5e5e5e",
+          "secondary-container": "#d4d4d4",
+          "surface-dim": "#dbdad5",
+          "outline-variant": "#c6c6c6",
+          "on-error": "#ffffff",
+          "tertiary": "#3b3b3b",
+          "on-primary-container": "#ffffff",
+          "tertiary-fixed": "#5e5e5e",
+          "on-secondary-container": "#1b1b1b",
+          "outline": "#777777",
+          "surface-container-highest": "#e4e2dd",
+          "primary-fixed": "#5f5e5e",
+          "on-primary-fixed": "#ffffff",
+          "surface": "#fbf9f4",
+          "on-error-container": "#410002",
+          "primary-fixed-dim": "#474746"
+        },
+        borderRadius: {
+          "DEFAULT": "0px",
+          "lg": "0px",
+          "xl": "0px",
+          "full": "9999px"
+        },
+        fontFamily: {
+          "headline": ["Space Grotesk"],
+          "body": ["Space Grotesk"],
+          "label": ["Space Grotesk"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Space Grotesk', sans-serif; }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .dashed-perforation {
+    border-top: 1px dashed #777777;
+  }
+</style>
+</head>
+<body class="bg-surface text-on-background selection:bg-primary selection:text-surface-bright">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-[#fbf9f4] border-b border-dashed border-stone-300 flex justify-between items-center w-full px-12 py-8 max-w-none">
+  <div class="text-lg font-bold tracking-[0.2em] text-black font-headline">
+    NORTH LONDON EDITIONS
+  </div>
+  <div class="hidden md:flex items-center gap-12 font-['Space_Grotesk'] tracking-tighter leading-none uppercase">
+    <a class="text-stone-500 hover:text-black transition-all duration-75" href="#">Editions</a>
+    <a class="text-stone-500 hover:text-black transition-all duration-75" href="#pricing">Pricing</a>
+    <a class="text-black border-b-2 border-black pb-1" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-12">
+
+  <!-- Hero -->
+  <header class="py-32">
+    <div class="mb-4 text-sm tracking-[0.3em] uppercase text-secondary">Publication No. 01</div>
+    <h1 class="text-7xl md:text-9xl font-bold tracking-tighter leading-[0.85] mb-12">
+      North London <br/>Editions <span class="text-outline-variant">Limited</span>
+    </h1>
+    <p class="max-w-2xl text-xl text-secondary leading-relaxed font-light">
+      A digital-first publishing house dedicated to the intersection of archaic typesetting and artificial intelligence. We produce high-fidelity manuscripts for the modern era.
+    </p>
+  </header>
+
+  <!-- Portfolio -->
+  <section class="mb-24">
+    <div class="mb-8 text-sm tracking-[0.3em] uppercase text-secondary">Our Work</div>
+    <div class="flex flex-col md:flex-row gap-0">
+      <div class="bg-surface-container-low p-10 flex-1 flex flex-col gap-4">
+        <div class="text-xs tracking-[0.3em] uppercase text-secondary">Edition 01</div>
+        <h3 class="text-2xl font-bold tracking-tighter uppercase">Northfox</h3>
+        <p class="text-secondary leading-relaxed">The programmable AI agent for stock research. Built to turn market intelligence into answers in seconds — grounded in real data, running locally.</p>
+        <a href="https://northfox-ai.github.io" class="mt-auto inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold hover:opacity-70 transition-opacity">
+          Visit
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="dashed-perforation mb-24"></div>
+
+  <!-- Pricing -->
+  <section class="mb-32" id="pricing">
+    <div class="mb-16">
+      <div class="mb-4 text-sm tracking-[0.3em] uppercase text-secondary">Northfox — Subscription Plans</div>
+      <h2 class="text-5xl font-bold tracking-tighter uppercase">Pricing</h2>
+    </div>
+
+    <div id="plans-container" class="flex flex-col md:flex-row gap-0">
+      <!-- Plans rendered by JS -->
+      <div class="text-secondary text-sm uppercase tracking-widest py-8" id="plans-loading">Loading plans...</div>
+    </div>
+  </section>
+
+  <div class="dashed-perforation mb-24"></div>
+
+  <!-- Contact -->
+  <section class="mb-48 max-w-4xl mx-auto text-center" id="contact">
+    <div class="mb-6 text-sm tracking-[0.3em] uppercase text-secondary">Correspondence</div>
+    <h2 class="text-5xl font-bold tracking-tighter uppercase mb-8">Get in touch</h2>
+    <div class="dashed-perforation mb-12 max-w-xs mx-auto"></div>
+    <a href="mailto:contact@northlondoneditions.com" class="group inline-flex items-center gap-4 text-2xl font-bold tracking-tighter hover:opacity-60 transition-opacity">
+      contact@northlondoneditions.com
+      <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+    </a>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#f5f3ee] border-t border-dashed border-stone-300 w-full px-12 py-16 flex flex-col md:flex-row justify-between items-start gap-8 font-['Space_Grotesk'] text-[0.75rem] tracking-tight leading-relaxed text-[#5e5e5e]">
+  <div class="flex flex-col gap-4">
+    <div class="font-bold text-black text-base">North London Editions Ltd.</div>
+    <div>Registered in England and Wales. <br/>Ref: NLE-2024-99</div>
+  </div>
+  <div class="flex flex-col md:flex-row gap-12">
+    <div class="flex flex-col gap-2">
+      <a class="text-stone-500 hover:text-black underline" href="https://www.northfox.ai/docs/legal/terms-of-service">Terms of Service</a>
+      <a class="text-stone-500 hover:text-black underline" href="https://www.northfox.ai/docs/legal/privacy-policy">Privacy Policy</a>
+    </div>
+    <div class="max-w-xs">
+      © 2024 North London Editions Ltd.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const ACCESS_LABELS = {
+    trial: 'Trial',
+    paid: 'Subscription',
+    pay_as_you_go: 'Pay As You Go',
+  };
+
+  function formatPrice(cents) {
+    if (cents == null) return null;
+    const dollars = cents / 100;
+    return dollars % 1 === 0
+      ? `$${dollars.toFixed(0)}`
+      : `$${dollars.toFixed(2)}`;
+  }
+
+  function formatTokens(n, suffix = 'tokens / mo') {
+    if (n == null) return null;
+    if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M ${suffix}`;
+    if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K ${suffix}`;
+    return `${n} ${suffix}`;
+  }
+
+  function renderPlans(allPlans) {
+    const plans = allPlans
+      .filter(p => p.access === 'paid' || p.access === 'trial')
+      .sort((a, b) => (a.monthly_price_usd_cents ?? 0) - (b.monthly_price_usd_cents ?? 0));
+    const container = document.getElementById('plans-container');
+    container.innerHTML = '';
+
+    // Alternate tones: low / base / low
+    const bgClasses = ['bg-surface-container-low', 'bg-surface-container', 'bg-surface-container-low'];
+
+    plans.forEach((plan, i) => {
+      const monthly = formatPrice(plan.monthly_price_usd_cents);
+      const annual = formatPrice(plan.annual_price_usd_cents);
+      const isTrial = plan.access === 'trial';
+      const tokenCount = isTrial ? plan.total_token_allowance : plan.monthly_token_allowance;
+      const tokenSuffix = isTrial ? 'tokens total' : 'tokens / mo';
+      const tokens = tokenCount != null ? `${formatTokens(tokenCount, tokenSuffix)}` : null;
+      const accessLabel = ACCESS_LABELS[plan.access_type] ?? plan.access_type;
+      const bg = bgClasses[i % bgClasses.length];
+      const isPayg = false;
+
+      const priceHtml = isPayg
+        ? `<div class="text-4xl font-bold tracking-tighter">Pay as you go</div>`
+        : monthly
+          ? `<div><span class="text-4xl font-bold tracking-tighter">${monthly}</span><span class="text-secondary text-sm ml-1 uppercase tracking-widest">/ mo</span></div>
+             ${annual ? `<div class="text-sm text-secondary uppercase tracking-widest mt-1">${annual} / yr</div>` : ''}`
+          : `<div class="text-4xl font-bold tracking-tighter">Free</div>`;
+
+      const card = document.createElement('div');
+      card.className = `${bg} p-10 flex-1 flex flex-col gap-6`;
+      card.innerHTML = `
+        <div>
+          <div class="text-xs tracking-[0.3em] uppercase text-secondary mb-3">${accessLabel}</div>
+          <h3 class="text-2xl font-bold tracking-tighter uppercase">${plan.name}</h3>
+        </div>
+        <div class="dashed-perforation"></div>
+        <div>${priceHtml}</div>
+        ${tokens ? `<div class="text-sm text-secondary uppercase tracking-widest">${tokens}</div>` : ''}
+        <div class="mt-auto pt-4">
+          <a href="https://northfox.ai" class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold hover:opacity-70 transition-opacity">
+            Get started
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </a>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  async function loadPlans() {
+    try {
+      const res = await fetch('https://api.northfox.ai/v1/plans');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const plans = await res.json();
+      if (!plans.length) throw new Error('No plans returned');
+      renderPlans(plans);
+    } catch (err) {
+      const loading = document.getElementById('plans-loading');
+      if (loading) {
+        loading.textContent = 'Plans unavailable — please check back shortly.';
+      }
+    }
+  }
+
+  loadPlans();
+</script>
+
+</body>
+</html>
